@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Interaction Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 API Interaction Lab</h1>
+            <p>Interact with APIs using modern JavaScript techniques</p>
+        </header>
+
+        <main>
+            <!-- Fetch Data Section -->
+            <section class="api-section">
+                <h2>Fetch Data</h2>
+                <div class="button-group">
+                    <button id="fetchFetch" class="btn btn-primary">Fetch Data with fetch()</button>
+                    <button id="fetchXHR" class="btn btn-secondary">Fetch Data with XHR</button>
+                </div>
+            </section>
+
+            <section id="output-section">
+                <div id="result" class="result"></div>
+                <div id="error" class="error"></div>
+            </section>
+
+            <!-- Send Data Section -->
+            <section>
+                <h2>Send Data (POST)</h2>
+                <form id="postForm" class="form">
+                    <input type="text" id="postTitle" placeholder="Enter Post Title" required>
+                    <textarea id="postBody" placeholder="Enter Post Body" required></textarea>
+                    <button type="submit" class="btn btn-success">Submit Post</button>
+                </form>
+            </section>
+
+            <!-- Update Data Section -->
+            <section>
+                <h2>Update Data (PUT)</h2>
+                <form id="putForm" class="form">
+                    <input type="number" id="postId" placeholder="Enter Post ID to Update" required>
+                    <input type="text" id="updateTitle" placeholder="Enter New Title" required>
+                    <textarea id="updateBody" placeholder="Enter New Body" required></textarea>
+                    <button type="submit" class="btn btn-warning">Update Post</button>
+                </form>
+            </section>
+
+            <!-- Delete Data Section -->
+            <section>
+                <h2>Delete Data (DELETE)</h2>
+                <form id="deleteForm" class="form">
+                    <input type="number" id="deletePostId" placeholder="Enter Post ID to Delete" required>
+                    <button type="submit" class="btn btn-danger">Delete Post</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 API Interaction Lab | Built with 💻 and ☕</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
